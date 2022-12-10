@@ -3,8 +3,6 @@
     <Target Name="ILRepacker" AfterTargets="Build">
         <ItemGroup>
             <InputAssemblies Include="$(TargetPath)"/>
-            <InputAssemblies Include="C:\Users\alex\source\repos\Valheim\utils\CreatureManager.dll"/>
-            <InputAssemblies Include="C:\Users\alex\source\repos\Valheim\utils\LocalizationManager.dll"/>
             <InputAssemblies Include="C:\Users\alex\source\repos\Valheim\utils\ServerSync.dll"/>
         </ItemGroup>
         <ILRepack Parallel="true" DebugInfo="true" Internalize="true" InputAssemblies="@(InputAssemblies)"

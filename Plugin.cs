@@ -1,14 +1,13 @@
 ﻿using BepInEx;
-using CreatureManager;
 using HarmonyLib;
 
-namespace Dungeons
+namespace TextTweaks
 {
     [BepInPlugin(ModGUID, ModName, ModVersion)]
     public class Plugin : BaseUnityPlugin
     {
         #region values
-        private const string ModName = "TestFlyingMob", ModVersion = "1.0.0", ModGUID = "com.Frogger." + ModName;
+        private const string ModName = "TextTweaks", ModVersion = "1.0.0", ModGUID = "com.Frogger." + ModName;
         private static readonly Harmony harmony = new(ModGUID);
         public static Plugin _self;
         #endregion
