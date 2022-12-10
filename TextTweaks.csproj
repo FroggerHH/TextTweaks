@@ -51,29 +51,11 @@
     <Reference Include="CreatureManager">
       <HintPath>..\..\utils\CreatureManager.dll</HintPath>
     </Reference>
-    <Reference Include="ItemManager">
-      <HintPath>..\..\utils\ItemManager.dll</HintPath>
-    </Reference>
     <Reference Include="LocalizationManager">
       <HintPath>..\..\utils\LocalizationManager.dll</HintPath>
     </Reference>
-    <Reference Include="LocationManager">
-      <HintPath>..\..\utils\LocationManager.dll</HintPath>
-    </Reference>
-    <Reference Include="MountManager">
-      <HintPath>..\..\utils\MountManager.dll</HintPath>
-    </Reference>
-    <Reference Include="PieceManager">
-      <HintPath>..\..\utils\PieceManager.dll</HintPath>
-    </Reference>
     <Reference Include="ServerSync">
       <HintPath>..\..\utils\ServerSync.dll</HintPath>
-    </Reference>
-    <Reference Include="SkillManager">
-      <HintPath>..\..\utils\SkillManager.dll</HintPath>
-    </Reference>
-    <Reference Include="StatusEffectManager">
-      <HintPath>..\..\utils\StatusEffectManager.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -95,6 +77,21 @@
     <Reference Include="UnityEngine.InputLegacyModule">
       <HintPath>D:\Games\Steam\steamapps\common\Valheim\valheim_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Slava\Unity\Unity Hub\versions\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Games\Steam\steamapps\common\Valheim\valheim_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Games\Steam\steamapps\common\Valheim\valheim_Data\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Games\Steam\steamapps\common\Valheim\valheim_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Plugin.cs" />
@@ -104,9 +101,7 @@
     <None Include="ILRepack.targets" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="assets\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="CopyDLL" AfterTargets="ILRepack">
     <Copy SourceFiles="$(TargetDir)$(ProjectName).dll" DestinationFolder="D:\Games\Steam\steamapps\common\Valheim\BepInEx\plugins" />
